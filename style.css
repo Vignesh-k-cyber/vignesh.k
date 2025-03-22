@@ -1,0 +1,119 @@
+/* Import Cyberpunk Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #00ff99;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+/* Header Section */
+header {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 153, 0.4);
+    border-bottom: 2px solid #00ff99;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00ff99;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px #00ff99;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ff99;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff0099;
+    text-shadow: 0 0 8px #ff0099;
+}
+
+/* Section Styling */
+.section {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid #00ff99;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgba(0, 255, 153, 0.6);
+}
+
+/* Certifications Section */
+.cert-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.4);
+    margin: 15px auto;
+    width: 60%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #00ff99;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(255, 0, 153, 0.6);
+}
+
+.cert-card a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: 1px solid #00ff99;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cert-card a:hover {
+    background: #00ff99;
+    color: black;
+    box-shadow: 0px 0px 10px #00ff99;
+}
+
+/* Contact Section */
+.social-links a {
+    text-decoration: none;
+    color: #00ff99;
+    margin: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ff0099;
+    text-shadow: 0 0 8px #ff0099;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 2px solid #00ff99;
+}
