@@ -12,12 +12,12 @@ header {
     text-align: center;
     padding: 20px;
     background: #111; /* Slightly lighter black */
-    border-bottom: 2px solid #B300FF;
+    border-bottom: 2px solid #6a006a; /* Blended Dark Purple */
 }
 
 /* Titles & Text */
 h1 {
-    color: #B300FF;
+    color: #6a006a; /* Blended Dark Purple */
     font-size: 38px;
 }
 
@@ -60,14 +60,14 @@ section:hover {
     background: #191919; /* Slightly lighter than the section */
     padding: 15px;
     border-radius: 8px;
-    border: 2px solid #B300FF;
+    border: 2px solid #6a006a; /* Blended Dark Purple */
     text-align: center;
     flex: 1;
     transition: 0.3s;
 }
 
 .box:hover {
-    box-shadow: 0px 0px 15px #B300FF;
+    box-shadow: 0px 0px 15px #6a006a; /* Blended Dark Purple */
 }
 
 /* Profile Photo */
@@ -78,7 +78,7 @@ section:hover {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 0px 10px #B300FF;
+    box-shadow: 0px 0px 10px #6a006a; /* Blended Dark Purple */
 }
 
 /* Lists */
@@ -91,6 +91,16 @@ ul li {
     font-size: 18px;
     padding: 5px;
     color: white;
+}
+
+/* Certificate Links */
+a {
+    color: #00F0FF; /* Lighter Electric Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0px 0px 5px #00F0FF;
 }
 
 /* Contact Links */
@@ -110,6 +120,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #111;
-    border-top: 2px solid #B300FF;
+    border-top: 2px solid #6a006a; /* Blended Dark Purple */
     color: white;
 }
