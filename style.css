@@ -22,13 +22,13 @@ h1 {
 }
 
 h2 {
-    color: #00E3FF; /* Lighter Electric Blue */
+    color: #00F0FF; /* Lighter Electric Blue */
     text-align: center;
     font-size: 28px;
 }
 
 .subtitle {
-    color: #00E3FF; /* Lighter Electric Blue */
+    color: #00F0FF; /* Lighter Electric Blue */
     font-size: 18px;
 }
 
@@ -39,12 +39,12 @@ section {
     margin: 20px;
     background: #141414; /* Medium Black */
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0, 227, 255, 0.5); /* Lighter Electric Blue */
+    box-shadow: 0px 0px 10px rgba(0, 240, 255, 0.5); /* Lighter Electric Blue */
     transition: 0.3s;
 }
 
 section:hover {
-    box-shadow: 0px 0px 20px rgba(0, 227, 255, 0.8); /* Lighter Electric Blue */
+    box-shadow: 0px 0px 20px rgba(0, 240, 255, 0.8); /* Lighter Electric Blue */
 }
 
 /* Highlights Section */
@@ -73,7 +73,7 @@ section:hover {
 /* Profile Photo */
 .profile-photo {
     display: block;
-    margin: 20px auto 0; /* Starts from the top */
+    margin: 10px auto 0; /* Starts from the top */
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -95,7 +95,7 @@ ul li {
 
 /* Contact Links */
 .contact-links a {
-    color: #00E3FF; /* Lighter Electric Blue */
+    color: #00F0FF; /* Lighter Electric Blue */
     text-decoration: none;
     font-weight: bold;
 }
