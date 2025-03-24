@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #cfece1;
+    background: #EAF6F6; /* Light Blue Background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,10 @@ body {
 
 .container {
     width: 800px;
-    background: #1d3b53;
-    color: white;
+    background: #FFFFFF; /* White Background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile Section */
@@ -34,19 +33,20 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #00A896; /* Green */
     object-fit: cover;
 }
 
 .profile h1 {
     font-size: 26px;
     margin-top: 10px;
+    color: #023047; /* Dark Blue */
 }
 
 .profile h2 {
     font-size: 16px;
     font-weight: normal;
-    color: #8dc6ff;
+    color: #00A896; /* Green */
 }
 
 /* Sections Layout */
@@ -58,15 +58,16 @@ body {
 
 /* Boxes */
 .box {
-    background: #2c5979;
+    background: #FFFFFF; /* White Box */
     padding: 15px;
-    border-left: 4px solid #52b788;
+    border-left: 4px solid #00A896; /* Green Accent */
     border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .box h2 {
     font-size: 18px;
-    color: #52b788;
+    color: #00A896; /* Green */
     margin-bottom: 5px;
 }
 
@@ -78,11 +79,12 @@ body {
 .box ul li {
     font-size: 14px;
     padding: 3px 0;
+    color: #333;
 }
 
 /* Contact Links */
 .box a {
-    color: #8dc6ff;
+    color: #0077B6; /* Blue */
     text-decoration: none;
 }
 
@@ -92,7 +94,3 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sections {
-        grid-template-columns: 1fr;
-    }
-}
