@@ -1,83 +1,64 @@
-/* General Styles */
 body {
     background-color: black;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
+header {
+    text-align: center;
+    border-bottom: 3px solid #B300FF;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.profile img {
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+}
+
+#certifications .certificate-box {
+    border: 2px solid #B300FF;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 0 15px #B300FF;
+}
+
+.certificate-box h2 {
     color: white;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: black;
-    border-bottom: 2px solid #B300FF; /* Neon Purple */
+.certificate-box a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #00CED1;
+    border: 2px solid #00CED1;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.navbar a {
-    color: #00FFFF; /* Cyan */
+.certificate-box a:hover {
+    background-color: #007BFF;
+    color: black;
 }
 
-.navbar a:hover {
-    color: #007BFF; /* Electric Blue */
-}
-
-/* Section Titles */
-.section-title {
-    color: #B300FF; /* Neon Purple */
-    text-shadow: 0 0 10px #B300FF;
-}
-
-/* Buttons */
-.btn {
-    background-color: transparent;
-    border: 2px solid #00CED1; /* Teal */
-    color: white;
-}
-
-.btn:hover {
-    background-color: #007BFF; /* Electric Blue */
-    border-color: #007BFF;
-}
-
-/* Boxes & Cards */
-.card {
-    background-color: black;
-    border: 2px solid #B300FF; /* Neon Purple */
-    box-shadow: 0 0 10px #B300FF;
-}
-
-.card-title {
-    color: #00FFFF; /* Cyan */
-}
-
-.card-text {
-    color: white;
-}
-
-/* Contact Section */
-.contact-section {
-    border-top: 2px solid #B300FF; /* Neon Purple */
-}
-
-.contact-info {
-    color: #00FFFF; /* Cyan */
-}
-
-/* Footer */
-.footer {
-    background-color: black;
-    border-top: 2px solid #B300FF; /* Neon Purple */
-    color: white;
-}
-
-/* Links */
-a {
-    color: #00CED1; /* Teal */
-}
-
-a:hover {
-    color: #007BFF; /* Electric Blue */
+#contact h2 {
+    border-top: 3px solid #B300FF;
+    text-align: center;
+    padding-top: 10px;
 }
