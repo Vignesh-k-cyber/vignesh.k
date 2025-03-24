@@ -1,78 +1,57 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #cfece1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 800px;
+    background-color: #1d3b53;
+    color: white;
+    position: relative;
     padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Section */
-.header {
-    display: flex;
-    align-items: center;
+.profile {
     text-align: center;
-    padding: 20px 0;
+    position: relative;
 }
 
-.profile-pic img {
-    width: 150px;
-    height: 150px;
+.profile img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
+    border: 5px solid #1a2e40;
 }
 
-.name-title {
-    margin-left: 20px;
-}
-
-.name-title h1 {
-    font-size: 28px;
-    color: #333;
-    margin: 0;
-}
-
-.name-title p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Content Sections */
-.content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
 }
 
 .box {
-    background: white;
+    background: #2c5979;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-left: 5px solid #52b788;
 }
 
-.box h2 {
-    font-size: 20px;
-    color: #222;
+h2 {
+    color: #52b788;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.box p {
-    font-size: 16px;
-    color: #555;
+.contact {
+    background: #264653;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
-}
 
