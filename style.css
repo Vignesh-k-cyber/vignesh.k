@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     background-color: #f0f4f8;
     font-family: Arial, sans-serif;
@@ -5,16 +6,18 @@ body {
     padding: 0;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 50px;
 }
 
+/* Profile Section */
 .profile {
     background: linear-gradient(to right, #0077b6, #00a896);
     color: white;
+    text-align: center;
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -27,25 +30,39 @@ body {
     border: 3px solid white;
 }
 
-.sections {
+/* Content Section */
+.content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sections > div {
-    width: 30%;
+/* Box Styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 48%;
     background: white;
     padding: 20px;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.full-width {
+    width: 100%;
+}
+
+/* Headings */
 h2 {
     color: #0077b6;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: #00a896;
