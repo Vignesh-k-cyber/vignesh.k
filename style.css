@@ -82,7 +82,7 @@ body {
     color: #333;
 }
 
-/* Contact Links */
+/* Certificate Links */
 .box a {
     color: #0077B6; /* Blue */
     text-decoration: none;
@@ -94,3 +94,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .sections {
+        grid-template-columns: 1fr;
+    }
+}
