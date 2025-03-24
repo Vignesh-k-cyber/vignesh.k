@@ -3,97 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K - Cyber Security Portfolio</title>
+    <title>Vignesh K - Cyber Security Resume</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            color: #ffffff; /* All text in white */
-        }
-        h1, h2, p, a, .cert-card p {
-            color: #ffffff !important; /* Ensures all text is white */
-        }
-        .profile-photo {
-            margin-top: 0px; /* Moves the photo to the top */
-            object-position: top center; /* Adjusts image focus */
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0px 4px 10px rgba(212, 163, 255, 0.5); /* Light purple shadow */
-        }
-        .cert-card {
-            border: 2px solid #d4a3ff; /* Light purple borders */
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(212, 163, 255, 0.5); /* Light purple box shadow */
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <h1>Vignesh K</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <p class="subtitle">Cyber Security Enthusiast | Aspiring Professional</p>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <img src="images/my_photo.JPG" alt="Vignesh K's Photo" class="profile-photo">
-  
-            <h2>About Me</h2>
-            <p>I completed my schooling at <strong>Rastriya Academy School, Hiriyur, Chitradurga</strong>, 
-               and my PU studies at <strong>Alva’s PU College, Moodbidri</strong>.  
-               Currently, I am pursuing <strong>CSE (Cyber Security)</strong> at <strong>Ramaiah Institute of Technology</strong>, 
-               set to graduate in <strong>2027</strong>.
-            </p>
-            <p>
-                I have expertise in <strong>C, Python, and MATLAB</strong>. I have completed 
-                <strong>DSA and NoSQL courses</strong> on <strong>Infosys Springboard</strong> and participated 
-                in <strong>Gameathon</strong> at <strong>Jyothy Institute of Technology</strong>.
-            </p>
-            <p>
-                Passionate about <strong>Cyber Security</strong>, I am eager to build my career in this field.
-            </p>
+    <section id="about" class="resume-section">
+        <h2>About Me</h2>
+        <img src="images/my_photo.JPG" alt="Vignesh K's Photo" class="profile-photo">
+        <p>I inspire to build my career towards cybersecurity and am working hard to achieve it.</p>
+    </section>
+
+    <section id="skills" class="resume-section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>MATLAB</li>
+            <li>Python</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="resume-section">
+        <h2>Internship Experience</h2>
+        <div class="resume-box">
+            <p><strong>iOS Web Development Intern</strong></p>
+            <p>Developed an **online voting app** using **Figma**.</p>
         </div>
     </section>
 
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2>Certifications</h2>
-            <div class="cert-card">
-                <p>DSA - Infosys Springboard</p>
-                <a href="certificates/dsa_certificate.pdf" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <p>NoSQL - Infosys Springboard</p>
-                <a href="certificates/mongodb_certificate.pdf" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <p>Gameathon Participation</p>
-                <a href="certificates/gameathon_7.0_Vignesh.k.pdf" target="_blank">View Certificate</a>
-            </div>
+    <section id="certifications" class="resume-section">
+        <h2>Certifications</h2>
+        <div class="resume-box">
+            <p>DSA - Infosys Springboard</p>
+            <a href="certificates/dsa_certificate.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="resume-box">
+            <p>NoSQL - Infosys Springboard</p>
+            <a href="certificates/mongodb_certificate.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="resume-box">
+            <p>Gameathon Participation - Jyothy Institute of Technology</p>
+            <a href="certificates/gameathon_7.0_Vignesh.k.pdf" target="_blank">View Certificate</a>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/vignesh_k_04?igsh=MWE3aHduNDZvbGJzcg==&utm_source=ig_contact_invite" target="_blank">Instagram</a>  
-                <a href="LINKEDIN_LINK_HERE" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+    <section id="hobbies" class="resume-section">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Playing Football</li>
+            <li>Listening to Music</li>
+            <li>Riding</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="resume-section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/vignesh_k_04" target="_blank">Instagram</a></p>
+        <p><a href="LINKEDIN_LINK_HERE" target="_blank">LinkedIn</a></p>
     </section>
 
     <footer>
@@ -101,7 +74,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
-
