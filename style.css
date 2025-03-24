@@ -12,23 +12,23 @@ header {
     text-align: center;
     padding: 20px;
     background: #111; /* Slightly lighter black */
-    border-bottom: 2px solid #6a006a; /* Blended Dark Purple */
+    border-bottom: 2px solid #B8860B; /* Blended Golden Accent */
 }
 
 /* Titles & Text */
 h1 {
-    color: #6a006a; /* Blended Dark Purple */
+    color: #B8860B; /* Blended Golden Accent */
     font-size: 38px;
 }
 
 h2 {
-    color: #00F0FF; /* Lighter Electric Blue */
+    color: #1E90FF; /* Adjusted Blue */
     text-align: center;
     font-size: 28px;
 }
 
 .subtitle {
-    color: #00F0FF; /* Lighter Electric Blue */
+    color: #1E90FF; /* Adjusted Blue */
     font-size: 18px;
 }
 
@@ -39,12 +39,12 @@ section {
     margin: 20px;
     background: #141414; /* Medium Black */
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0, 240, 255, 0.5); /* Lighter Electric Blue */
+    box-shadow: 0px 0px 10px rgba(30, 144, 255, 0.5); /* Adjusted Blue */
     transition: 0.3s;
 }
 
 section:hover {
-    box-shadow: 0px 0px 20px rgba(0, 240, 255, 0.8); /* Lighter Electric Blue */
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 0.8); /* Adjusted Blue */
 }
 
 /* Highlights Section */
@@ -60,14 +60,14 @@ section:hover {
     background: #191919; /* Slightly lighter than the section */
     padding: 15px;
     border-radius: 8px;
-    border: 2px solid #6a006a; /* Blended Dark Purple */
+    border: 2px solid #B8860B; /* Blended Golden Accent */
     text-align: center;
     flex: 1;
     transition: 0.3s;
 }
 
 .box:hover {
-    box-shadow: 0px 0px 15px #6a006a; /* Blended Dark Purple */
+    box-shadow: 0px 0px 15px #B8860B; /* Blended Golden Accent */
 }
 
 /* Profile Photo */
@@ -78,7 +78,7 @@ section:hover {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 0px 10px #6a006a; /* Blended Dark Purple */
+    box-shadow: 0px 0px 10px #B8860B; /* Blended Golden Accent */
 }
 
 /* Lists */
@@ -95,24 +95,24 @@ ul li {
 
 /* Certificate Links */
 a {
-    color: #00F0FF; /* Lighter Electric Blue */
+    color: #1E90FF; /* Adjusted Blue */
     text-decoration: none;
 }
 
 a:hover {
-    text-shadow: 0px 0px 5px #00F0FF;
+    text-shadow: 0px 0px 5px #1E90FF;
 }
 
 /* Contact Links */
 .contact-links a {
-    color: #00F0FF; /* Lighter Electric Blue */
+    color: #1E90FF; /* Adjusted Blue */
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-links a:hover {
-    color: #007BFF;
-    text-shadow: 0px 0px 5px #007BFF;
+    color: #B8860B;
+    text-shadow: 0px 0px 5px #B8860B;
 }
 
 /* Footer */
@@ -120,6 +120,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #111;
-    border-top: 2px solid #6a006a; /* Blended Dark Purple */
+    border-top: 2px solid #B8860B; /* Blended Golden Accent */
     color: white;
 }
