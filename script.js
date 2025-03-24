@@ -1,9 +1,10 @@
-document.querySelectorAll('.box').forEach(box => {
-    box.addEventListener('mouseover', () => {
-        box.style.transform = 'scale(1.05)';
-        box.style.transition = '0.3s';
+document.querySelectorAll(".box").forEach(box => {
+    box.addEventListener("mouseenter", () => {
+        box.style.transform = "scale(1.05)";
+        box.style.transition = "0.3s ease-in-out";
     });
-    box.addEventListener('mouseout', () => {
-        box.style.transform = 'scale(1)';
+
+    box.addEventListener("mouseleave", () => {
+        box.style.transform = "scale(1)";
     });
 });
