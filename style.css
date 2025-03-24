@@ -1,4 +1,4 @@
-/* General Styles */
+/* Background & General Styling */
 body {
     background: url('images/background.png') no-repeat center center fixed;
     background-size: cover;
@@ -8,71 +8,61 @@ body {
     padding: 0;
 }
 
-/* Container */
-.container {
-    width: 80%;
-    margin: auto;
+/* Header */
+header {
+    text-align: center;
     padding: 20px;
 }
 
-/* Headers */
-h1 {
-    color: #B300FF;
-    text-align: center;
-    font-size: 36px;
-}
-
-h2 {
-    color: #00CED1;
-    text-align: center;
-    font-size: 28px;
-}
-
 .subtitle {
-    text-align: center;
     color: #00CED1;
     font-size: 18px;
+}
+
+/* Resume Sections */
+.resume-section {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #B300FF;
+    box-shadow: 0px 0px 15px rgba(179, 0, 255, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-section:hover {
+    box-shadow: 0px 0px 25px rgba(0, 206, 209, 0.8);
 }
 
 /* Profile Photo */
 .profile-photo {
     display: block;
-    margin: 50px auto; /* Moves photo downward */
-    width: 200px;
-    height: 200px;
+    margin: 20px auto;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 0px 10px #B300FF;
 }
 
-/* Section Boxes */
-.section-boxes {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-/* Individual Boxes */
-.box {
-    background: rgba(255, 255, 255, 0.1);
+/* Resume Box Glow Effect */
+.resume-box {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #007BFF;
     padding: 15px;
+    margin-bottom: 15px;
     border-radius: 8px;
-    border: 2px solid #B300FF;
     text-align: center;
-    flex: 1;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
-.box:hover {
-    box-shadow: 0px 0px 15px #B300FF;
+.resume-box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
 }
 
 /* Lists */
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 ul li {
@@ -82,13 +72,21 @@ ul li {
 }
 
 /* Contact Links */
-.contact-links a {
-    color: #00FFFF;
+a {
+    color: #00CED1;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.contact-links a:hover {
+a:hover {
     color: #007BFF;
     text-shadow: 0px 0px 5px #007BFF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #B300FF;
+    color: white;
 }
