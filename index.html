@@ -3,76 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K - Cyber Security Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vignesh K - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Vignesh K</h1>
-        <p class="subtitle">Cyber Security Enthusiast | Aspiring Professional</p>
+        <h1>VIGNESH K</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="about" class="resume-section">
-        <h2>About Me</h2>
-        <img src="images/my_photo.JPG" alt="Vignesh K's Photo" class="profile-photo">
-        <p>I inspire to build my career towards cybersecurity and am working hard to achieve it.</p>
+    <section id="about">
+        <div class="profile">
+            <img src="profile.jpg" alt="Vignesh K">
+        </div>
+        <p>I completed my schooling at <b>Rastriya Academy School, Hiriyur, Chitradurga</b>, and my PU studies at <b>Alva’s PU College, Moodbidri</b>. Currently, I am pursuing <b>CSE (Cyber Security)</b> at <b>Ramaiah Institute of Technology</b>, set to graduate in <b>2027</b>.</p>
     </section>
-
-    <section id="skills" class="resume-section">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>C</li>
-            <li>MATLAB</li>
-            <li>Python</li>
-            <li>Figma</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="resume-section">
-        <h2>Internship Experience</h2>
-        <div class="resume-box">
-            <p><strong>iOS Web Development Intern</strong></p>
-            <p>Developed an **online voting app** using **Figma**.</p>
+    <section id="certifications">
+        <div class="certificate-box">
+            <h2>DSA - Infosys Springboard</h2>
+            <a href="#">View Certificate</a>
+        </div>
+        <div class="certificate-box">
+            <h2>NoSQL - Infosys Springboard</h2>
+            <a href="#">View Certificate</a>
+        </div>
+        <div class="certificate-box">
+            <h2>Gameathon Participation</h2>
+            <a href="#">View Certificate</a>
         </div>
     </section>
-
-    <section id="certifications" class="resume-section">
-        <h2>Certifications</h2>
-        <div class="resume-box">
-            <p>DSA - Infosys Springboard</p>
-            <a href="certificates/dsa_certificate.pdf" target="_blank">View Certificate</a>
-        </div>
-        <div class="resume-box">
-            <p>NoSQL - Infosys Springboard</p>
-            <a href="certificates/mongodb_certificate.pdf" target="_blank">View Certificate</a>
-        </div>
-        <div class="resume-box">
-            <p>Gameathon Participation - Jyothy Institute of Technology</p>
-            <a href="certificates/gameathon_7.0_Vignesh.k.pdf" target="_blank">View Certificate</a>
-        </div>
-    </section>
-
-    <section id="hobbies" class="resume-section">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Playing Football</li>
-            <li>Listening to Music</li>
-            <li>Riding</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="resume-section">
+    <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
-        <p><a href="https://www.instagram.com/vignesh_k_04" target="_blank">Instagram</a></p>
-        <p><a href="LINKEDIN_LINK_HERE" target="_blank">LinkedIn</a></p>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Vignesh K | Cyber Security Enthusiast</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
+<style>
+    body {
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+        background: url('images/background.png') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    h1, h2 {
+        color: white;
+    }
+    .certificate-box {
+        border: 2px solid #B300FF;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+        box-shadow: 0 0 15px #B300FF;
+    }
+    .certificate-box h2 {
+        color: white;
+    }
+    .certificate-box a {
+        display: inline-block;
+        padding: 8px 16px;
+        color: #00CED1;
+        border: 2px solid #00CED1;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .certificate-box a:hover {
+        background-color: #007BFF;
+        color: black;
+    }
+</style>
