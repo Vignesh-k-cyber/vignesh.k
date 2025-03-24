@@ -1,63 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #0a0a0a;
-    color: #fff;
+    background: #cfece1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 800px;
+    background: #1d3b53;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Profile Section */
 .profile {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .profile img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 3px solid #00bcd4;
+    border: 3px solid white;
+    object-fit: cover;
 }
 
-h1 {
-    font-size: 28px;
-    margin: 10px 0;
+.profile h1 {
+    font-size: 26px;
+    margin-top: 10px;
 }
 
-h2 {
-    font-size: 18px;
-    color: #00bcd4;
+.profile h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #8dc6ff;
 }
 
+/* Sections Layout */
 .sections {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
 }
 
+/* Boxes */
 .box {
-    background: #151515;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 4px solid #00bcd4;
-    width: 250px;
+    background: #2c5979;
+    padding: 15px;
+    border-left: 4px solid #52b788;
+    border-radius: 5px;
 }
 
-.box:hover {
-    background: #1e1e1e;
-    transform: scale(1.05);
-    transition: 0.3s;
+.box h2 {
+    font-size: 18px;
+    color: #52b788;
+    margin-bottom: 5px;
+}
+
+.box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.box ul li {
+    font-size: 14px;
+    padding: 3px 0;
+}
+
+/* Contact Links */
+.box a {
+    color: #8dc6ff;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sections {
+        grid-template-columns: 1fr;
+    }
 }
