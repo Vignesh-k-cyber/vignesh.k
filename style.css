@@ -1,64 +1,92 @@
+/* Background & General Styling */
 body {
-    background-color: black;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header */
 header {
     text-align: center;
-    border-bottom: 3px solid #B300FF;
+    padding: 20px;
 }
 
-nav ul {
+.subtitle {
+    color: #00CED1;
+    font-size: 18px;
+}
+
+/* Resume Sections */
+.resume-section {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #B300FF;
+    box-shadow: 0px 0px 15px rgba(179, 0, 255, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-section:hover {
+    box-shadow: 0px 0px 25px rgba(0, 206, 209, 0.8);
+}
+
+/* Profile Photo */
+.profile-photo {
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Resume Box Glow Effect */
+.resume-box {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #007BFF;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Lists */
+ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #00FFFF;
-    text-decoration: none;
-}
-
-.profile img {
-    border: 3px solid #007BFF;
-    border-radius: 50%;
-}
-
-#certifications .certificate-box {
-    border: 2px solid #B300FF;
-    padding: 10px;
-    margin: 10px auto;
-    text-align: center;
-    width: 80%;
-    box-shadow: 0 0 15px #B300FF;
-}
-
-.certificate-box h2 {
+ul li {
+    font-size: 18px;
+    padding: 5px;
     color: white;
 }
 
-.certificate-box a {
-    display: inline-block;
-    padding: 8px 16px;
+/* Contact Links */
+a {
     color: #00CED1;
-    border: 2px solid #00CED1;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.certificate-box a:hover {
-    background-color: #007BFF;
-    color: black;
+a:hover {
+    color: #007BFF;
+    text-shadow: 0px 0px 5px #007BFF;
 }
 
-#contact h2 {
-    border-top: 3px solid #B300FF;
+/* Footer */
+footer {
     text-align: center;
-    padding-top: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #B300FF;
+    color: white;
 }
