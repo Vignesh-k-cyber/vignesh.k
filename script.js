@@ -1,13 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card");
+document.querySelectorAll('.box').forEach(box => {
+    box.addEventListener('mouseenter', () => {
+        box.style.boxShadow = "0px 0px 10px #00bcd4";
+    });
 
-    cards.forEach(card => {
-        card.addEventListener("mouseenter", () => {
-            card.style.boxShadow = "0px 0px 15px rgba(0, 200, 255, 0.7)";
-        });
-
-        card.addEventListener("mouseleave", () => {
-            card.style.boxShadow = "2px 2px 10px rgba(0,0,0,0.2)";
-        });
+    box.addEventListener('mouseleave', () => {
+        box.style.boxShadow = "none";
     });
 });
+
