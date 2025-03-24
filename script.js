@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    alert("Welcome to my Cyber Security Portfolio!");
-
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener("click", function (event) {
-            event.preventDefault();
-            const section = document.querySelector(this.getAttribute("href"));
-            section.scrollIntoView({ behavior: "smooth" });
+    document.querySelectorAll('.resume-box a').forEach(link => {
+        link.addEventListener("mouseover", function () {
+            this.parentElement.style.boxShadow = "0px 0px 15px rgba(0, 255, 255, 0.8)";
+        });
+        link.addEventListener("mouseout", function () {
+            this.parentElement.style.boxShadow = "0px 0px 10px rgba(0, 255, 255, 0.5)";
         });
     });
 });
