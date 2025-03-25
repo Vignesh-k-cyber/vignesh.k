@@ -1,3 +1,3 @@
-function viewCertificate(pdfPath) {
-    window.open(pdfPath, '_blank');
+function viewCertificate(path) {
+    window.open(path, '_blank');
 }
