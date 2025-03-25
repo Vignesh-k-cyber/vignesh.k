@@ -3,61 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vignesh K | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <!-- Left Section -->
-    <div class="left-section">
-        <div class="profile">
-            <div class="hexagon">
-                <img src="my_photo.jpg" alt="Vignesh K">
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="profile">
+                <img src="my_photo.jpg" alt="Vignesh K" class="hexagon">
+                <h2>Vignesh K</h2>
+            </div>
+            <div class="info-box">
+                <h3>Profile</h3>
+                <p>Cybersecurity student at Ramaiah Institute of Technology. Passionate about securing digital systems.</p>
+            </div>
+            <div class="info-box">
+                <h3>Work Experience</h3>
+                <p><strong>Internship:</strong> iOS Web Development (Online Voting App using Figma)</p>
             </div>
         </div>
-        <div class="info-box">
-            <h2>Profile</h2>
-            <p>Cybersecurity student at Ramaiah Institute of Technology. Passionate about securing digital systems.</p>
-        </div>
-        <div class="info-box">
-            <h2>Work Experience</h2>
-            <p><strong>Internship:</strong> iOS Web Development (Online Voting App using Figma)</p>
-        </div>
-    </div>
 
-    <!-- Right Section -->
-    <div class="right-section">
-        <h1>VIGNESH K</h1>
-        <h3>Cyber Security Tech Enthusiast</h3>
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>VIGNESH K</h1>
+            <p>Cyber Security Tech Enthusiast</p>
 
-        <div class="skills">
-            <h2>Skills</h2>
-            <button>C</button>
-            <button>Python</button>
-            <button>MATLAB</button>
-            <button>Figma</button>
-        </div>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span>C</span> <span>Python</span> <span>MATLAB</span> <span>Figma</span>
+            </div>
 
-        <div class="certificates">
-            <h2>Certificates</h2>
-            <button onclick="openCert('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
-            <button onclick="openCert('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
-            <button onclick="openCert('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
-        </div>
+            <h3>Certificates</h3>
+            <button onclick="openPDF('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
+            <button onclick="openPDF('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
+            <button onclick="openPDF('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
 
-        <div class="contact">
-            <h2>Contact</h2>
+            <h3>Contact</h3>
             <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
         </div>
     </div>
-</div>
 
-<script>
-    function openCert(url) {
-        window.open(url, "_blank");
-    }
-</script>
-
+    <script>
+        function openPDF(pdf) {
+            window.open(pdf, '_blank');
+        }
+    </script>
 </body>
 </html>
