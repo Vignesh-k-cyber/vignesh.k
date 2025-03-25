@@ -53,9 +53,9 @@
             </div>
             <div class="box">
                 <h3>Certificates</h3>
-                <button onclick="openCertificate('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
-                <button onclick="openCertificate('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
-                <button onclick="openCertificate('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
+                <button onclick="showCertificate('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
+                <button onclick="showCertificate('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
+                <button onclick="showCertificate('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
             </div>
         </section>
 
@@ -64,6 +64,14 @@
             <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
         </footer>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCertificate()">&times;</span>
+            <iframe id="certificateFrame" src="" width="100%" height="500px"></iframe>
+        </div>
     </div>
 
     <script src="script.js"></script>
