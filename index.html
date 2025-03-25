@@ -3,39 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K - Portfolio</title>
+    <title>Vignesh K | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-<header>
-<img src="https://your-github-username.github.io/images/my_photo.jpg" alt="Profile Photo">
-<h1>VIGNESH K</h1>
-<h2>Cyber Security Student |Tech Enthusiast</h2>
-</header>
+    <header>
+        <img src="images/my_photo.jpg" alt="Vignesh K">
+        <h1>VIGNESH K</h1>
+        <h2>Cyber Security Student | Tech Enthusiast</h2>
+    </header>
 
-        <section class="info-sections">
-            <div class="box about">
-                <h3>About Me</h3>
-                <p>I am a cybersecurity student at Ramaiah Institute of Technology, working towards securing digital systems. Passionate about learning, technology, and innovation.</p>
-            </div>
-
-            <div class="box education">
-                <h3>Education</h3>
-                <p><strong>Course:</strong> B.Tech in CSE (Cyber Security)</p>
-                <p><strong>Institution:</strong> Ramaiah Institute of Technology</p>
-                <p><strong>Graduation Year:</strong> 2027</p>
-            </div>
-
-            <div class="box experience">
-                <h3>Experience</h3>
-                <p>Internship in iOS Web Development – Developed an online voting app using Figma.</p>
-            </div>
+    <main>
+        <section class="about-box">
+            <h3>About Me</h3>
+            <p>I am a cybersecurity student at Ramaiah Institute of Technology, passionate about securing digital systems and technology.</p>
         </section>
 
-        <section class="three-boxes">
-            <div class="box">
+        <section class="edu-box">
+            <h3>Education</h3>
+            <p><strong>Course:</strong> B.Tech in CSE (Cyber Security)</p>
+            <p><strong>Institution:</strong> Ramaiah Institute of Technology</p>
+            <p><strong>Graduation Year:</strong> 2027</p>
+        </section>
+
+        <section class="exp-box">
+            <h3>Experience</h3>
+            <p>Internship in iOS Web Development – Developed an online voting app using Figma.</p>
+        </section>
+
+        <div class="skills-hobbies-cert">
+            <section class="skills-box">
                 <h3>Skills</h3>
                 <ul>
                     <li>C</li>
@@ -43,37 +41,29 @@
                     <li>MATLAB</li>
                     <li>Figma</li>
                 </ul>
-            </div>
-            <div class="box">
+            </section>
+
+            <section class="hobbies-box">
                 <h3>Hobbies</h3>
                 <ul>
                     <li>Riding</li>
                     <li>Football</li>
-                    <li>Listening to Music</li>
+                    <li>Music</li>
                 </ul>
-            </div>
-            <div class="box">
+            </section>
+
+            <section class="cert-box">
                 <h3>Certificates</h3>
-                <button onclick="showCertificate('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
-                <button onclick="showCertificate('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
-                <button onclick="showCertificate('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
-            </div>
-        </section>
-
-        <footer>
-            <h3>Contact Me</h3>
-            <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
-        </footer>
-    </div>
-
-    <!-- Certificate Modal -->
-    <div id="certificateModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeCertificate()">&times;</span>
-            <iframe id="certificateFrame" src="" width="100%" height="500px"></iframe>
+                <button onclick="openCert('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
+                <button onclick="openCert('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
+                <button onclick="openCert('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
+            </section>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>Contact: vignesh.k.0429@gmail.com</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
