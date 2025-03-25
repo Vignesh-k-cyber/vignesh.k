@@ -11,3 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function viewCertificate() {
+    window.open("path-to-your-certificate.pdf", "_blank");
+}
