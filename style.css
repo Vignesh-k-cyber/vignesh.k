@@ -1,76 +1,64 @@
+/* General Styles */
 body {
-    background-color: #0d1b1e; /* Darkest green shade */
-    color: white;
     font-family: Arial, sans-serif;
+    background-color: #0f1d17; /* Darkest Green */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-}
-
 /* Left Section */
 .left-section {
-    width: 40%;
-    background-color: #11262c;
+    background: #122922; /* Dark Green */
+    width: 30%;
     padding: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
-/* Profile Image (Hexagon) */
-.hexagon {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    background-color: white;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    margin: 0 auto;
+.profile img {
+    width: 120px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Hexagon */
 }
 
-.hexagon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: inherit;
-}
-
-/* Info Boxes */
 .info-box {
-    background-color: #183d42;
+    background: #18322a; /* Slightly lighter green */
     padding: 15px;
-    margin-top: 15px;
-    border-radius: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
 /* Right Section */
 .right-section {
-    width: 60%;
+    background: #1b352e; /* Dark Green */
+    width: 50%;
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-h1, h2, h3 {
-    color: #f5a623;
-}
-
-.skills, .certificates, .contact {
-    margin-top: 20px;
+.skills span {
+    background: #24503f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
 }
 
 button {
-    background-color: #f5a623;
+    background: #ffa500;
+    color: black;
     border: none;
     padding: 10px;
-    color: white;
-    margin: 5px;
     cursor: pointer;
+    margin: 5px;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #d98c1f;
 }
