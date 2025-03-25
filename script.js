@@ -1,3 +1,3 @@
-function openCert(certPath) {
-    window.open(certPath, '_blank', 'width=800,height=600');
+function viewCertificate(pdfPath) {
+    window.open(pdfPath, '_blank');
 }
