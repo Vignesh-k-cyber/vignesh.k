@@ -20,15 +20,15 @@ body {
 .left-section {
     background: #222;
     color: white;
-    width: 35%;
+    width: 50%;  /* Equal width */
     padding: 20px;
     text-align: center;
 }
 
 /* Profile Photo */
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Slightly larger */
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px auto;
@@ -52,8 +52,9 @@ body {
 /* Right Section */
 .right-section {
     background: white;
-    width: 65%;
+    width: 50%;  /* Equal width */
     padding: 30px;
+    text-align: center;
 }
 
 .right-section h1 {
