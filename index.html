@@ -7,43 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Vignesh K" onerror="this.onerror=null; this.src='images/default.jpg';">
-            <h1>VIGNESH K</h1>
-            <p>Cyber Security Student | Tech Enthusiast</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
     <div class="container">
-        
-        <!-- About Me & Education -->
-        <div class="about-education">
-            <div class="about">
-                <h2>About Me</h2>
-                <p>I am a cybersecurity student at Ramaiah Institute of Technology, working towards securing digital systems. Passionate about learning, technology, and innovation.</p>
-            </div>
+        <header>
+            <img src="images/my_photo.jpg" alt="Vignesh K">
+            <h1>VIGNESH K</h1>
+            <h2>Cyber Security Student | Tech Enthusiast</h2>
+        </header>
+
+        <section class="about">
+            <h3>About Me</h3>
+            <p>I am a cybersecurity student at Ramaiah Institute of Technology, working towards securing digital systems. Passionate about learning, technology, and innovation.</p>
+        </section>
+
+        <section class="education-experience">
             <div class="education">
-                <h2>Education</h2>
+                <h3>Education</h3>
                 <p><strong>Course:</strong> B.Tech in CSE (Cyber Security)</p>
                 <p><strong>Institution:</strong> Ramaiah Institute of Technology</p>
                 <p><strong>Graduation Year:</strong> 2027</p>
             </div>
-        </div>
+            <div class="experience">
+                <h3>Experience</h3>
+                <p>Internship in iOS Web Development – Developed an online voting app using Figma.</p>
+            </div>
+        </section>
 
-        <!-- Experience Section -->
-        <div class="experience">
-            <h2>Experience</h2>
-            <p>Internship in iOS Web Development – Developed an online voting app using Figma.</p>
-        </div>
-
-        <!-- Skills, Hobbies & Certificates in a Single Row -->
-        <div class="skills-hobbies-certificates">
-            <div class="box skills">
-                <h2>Skills</h2>
+        <section class="three-boxes">
+            <div class="box">
+                <h3>Skills</h3>
                 <ul>
                     <li>C</li>
                     <li>Python</li>
@@ -51,31 +42,28 @@
                     <li>Figma</li>
                 </ul>
             </div>
-            <div class="box hobbies">
-                <h2>Hobbies</h2>
+            <div class="box">
+                <h3>Hobbies</h3>
                 <ul>
                     <li>Riding</li>
                     <li>Football</li>
                     <li>Listening to Music</li>
                 </ul>
             </div>
-            <div class="box certificates">
-                <h2>Certificates</h2>
-                <button onclick="viewCertificate()">View Certificate</button>
+            <div class="box">
+                <h3>Certificates</h3>
+                <button onclick="openCertificate('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
+                <button onclick="openCertificate('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
+                <button onclick="openCertificate('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
             </div>
-        </div>
+        </section>
+
+        <footer>
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+        </footer>
     </div>
-
-    <!-- Contact Section at the Bottom -->
-    <footer>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
-        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-    </footer>
-
-    <!-- JavaScript File -->
     <script src="script.js"></script>
-
 </body>
 </html>
-
