@@ -1,97 +1,113 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Header */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 header {
     text-align: center;
-    background-color: #004d99;
-    color: white;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
-.profile-container img {
+header img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid white;
+    margin-bottom: 10px;
 }
 
-.profile-container h1 {
-    margin: 10px 0 5px;
+h1 {
+    color: #004aad;
+    margin-bottom: 5px;
 }
 
-.profile-container p {
+h2 {
+    color: #008000;
     font-size: 18px;
 }
 
-/* Main Container */
-.container {
-    width: 80%;
-    margin: auto;
+/* Section Styles */
+.about, .education-experience, .three-boxes, footer {
     padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-/* About & Education */
-.about-education {
+.education-experience {
     display: flex;
     justify-content: space-between;
 }
 
-.about, .education {
+.education, .experience {
     width: 48%;
-    background: #e6f2ff;
-    padding: 20px;
-    border-radius: 8px;
 }
 
-/* Experience */
-.experience {
-    background: #cce5ff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Skills, Hobbies, Certificates */
-.skills-hobbies-certificates {
+/* Three Boxes */
+.three-boxes {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .box {
     width: 30%;
-    background: #99ccff;
-    padding: 20px;
+    padding: 15px;
+    background-color: #e6f7ff;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.box h2 {
-    margin-bottom: 10px;
-}
-
-/* Contact */
-footer {
-    background-color: #004d99;
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #004aad;
     color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #003288;
+}
+
+/* Footer */
+footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
-.contact a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .education-experience {
+        flex-direction: column;
+    }
 
-.contact a:hover {
-    text-decoration: underline;
+    .education, .experience {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .three-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 10px;
+    }
 }
