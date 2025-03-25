@@ -3,67 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K | Portfolio</title>
+    <title>Vignesh K - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="profile-photo">
+                <img src="images/my_photo.JPG" alt="Vignesh K">
+            </div>
+            <div class="info-box">
+                <h2>Profile</h2>
+                <p>Cybersecurity student at Ramaiah Institute of Technology. Passionate about securing digital systems.</p>
+            </div>
+            <div class="info-box">
+                <h2>Work Experience</h2>
+                <p><strong>Internship:</strong> iOS Web Development (Online Voting App using Figma).</p>
+            </div>
+            <div class="info-box">
+                <h2>Education</h2>
+                <p><strong>Course:</strong> B.Tech in CSE (Cyber Security)</p>
+                <p><strong>Institution:</strong> Ramaiah Institute of Technology</p>
+                <p><strong>Graduation Year:</strong> 2027</p>
+            </div>
+        </div>
 
-    <header>
-        <img src="images/my_photo.jpg" alt="Vignesh K">
-        <h1>VIGNESH K</h1>
-        <h2>Cyber Security Student | Tech Enthusiast</h2>
-    </header>
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>VIGNESH K</h1>
+            <h3>Cyber Security Student | Tech Enthusiast</h3>
 
-    <main>
-        <section class="about-box">
-            <h3>About Me</h3>
-            <p>I am a cybersecurity student at Ramaiah Institute of Technology, passionate about securing digital systems and technology.</p>
-        </section>
-
-        <section class="edu-box">
-            <h3>Education</h3>
-            <p><strong>Course:</strong> B.Tech in CSE (Cyber Security)</p>
-            <p><strong>Institution:</strong> Ramaiah Institute of Technology</p>
-            <p><strong>Graduation Year:</strong> 2027</p>
-        </section>
-
-        <section class="exp-box">
-            <h3>Experience</h3>
-            <p>Internship in iOS Web Development – Developed an online voting app using Figma.</p>
-        </section>
-
-        <div class="skills-hobbies-cert">
-            <section class="skills-box">
-                <h3>Skills</h3>
+            <div class="skills">
+                <h2>Skills</h2>
                 <ul>
                     <li>C</li>
                     <li>Python</li>
                     <li>MATLAB</li>
                     <li>Figma</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="hobbies-box">
-                <h3>Hobbies</h3>
-                <ul>
-                    <li>Riding</li>
-                    <li>Football</li>
-                    <li>Music</li>
-                </ul>
-            </section>
+            <div class="certificates">
+                <h2>Certificates</h2>
+                <button onclick="viewCertificate('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
+                <button onclick="viewCertificate('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
+                <button onclick="viewCertificate('certificates/gameathon_7.0.pdf')">View Gameathon Certificate</button>
+            </div>
 
-            <section class="cert-box">
-                <h3>Certificates</h3>
-                <button onclick="openCert('certificates/dsa_certificate.pdf')">View DSA Certificate</button>
-                <button onclick="openCert('certificates/mongodb_certificate.pdf')">View MongoDB Certificate</button>
-                <button onclick="openCert('certificates/gamesthon_7.0.pdf')">View Gameathon Certificate</button>
-            </section>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Email: vignesh.k.0429@gmail.com</p>
+            </div>
         </div>
-    </main>
-
-    <footer>
-        <p>Contact: vignesh.k.0429@gmail.com</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
