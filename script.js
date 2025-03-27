@@ -1,6 +1,7 @@
 document.querySelectorAll('.cert-btn').forEach(button => {
     button.addEventListener('click', function () {
-        document.getElementById('certificate-frame').src = this.getAttribute('data-cert');
+        const certFrame = document.getElementById('certificate-frame');
+        certFrame.src = this.getAttribute('data-cert');
         document.getElementById('certificate-modal').style.display = 'block';
     });
 });
