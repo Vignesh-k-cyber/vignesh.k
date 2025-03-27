@@ -5,65 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vignesh K - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Left Section -->
         <div class="left-section">
             <div class="profile">
                 <img src="./images/my_photo.JPG" alt="Profile Photo">
             </div>
-            <h1>VIGNESH K</h1>
-            <h3>Cybersecurity Student</h3>
-
-            <div class="section">
-                <h2>Education</h2>
-                <p>B.Tech CSE (Cybersecurity)<br>Ramaiah Institute of Technology (2027)</p>
-            </div>
-
-            <div class="section">
-                <h2>Experience</h2>
-                <p>iOS Web Development Intern</p>
-                <p>Developed an online voting app using Figma</p>
+            <h1>Vignesh K</h1>
+            <p>Cyber Security | CSE Student</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+                <a href="mailto:vignesh.k.0429@gmail.com">Email</a>
             </div>
         </div>
 
+        <!-- Right Section -->
         <div class="right-section">
-            <div class="section">
+            <section>
+                <h2>About Me</h2>
+                <p>I'm a Cyber Security student at Ramaiah Institute of Technology, passionate about programming, game development, and web security.</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <p>Internship in iOS Web Development - Developed an Online Voting App using Figma.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <p>B.Tech in CSE (Cyber Security) - Graduating in 2027</p>
+            </section>
+
+            <section>
                 <h2>Skills</h2>
-                <div class="box">C</div>
-                <div class="box">Python</div>
-                <div class="box">MATLAB</div>
-                <div class="box">Figma</div>
-            </div>
+                <p>C, Python, MATLAB, Figma</p>
+            </section>
 
-            <div class="section">
+            <section>
                 <h2>Hobbies</h2>
-                <div class="box">Riding</div>
-                <div class="box">Football</div>
-                <div class="box">Music</div>
-            </div>
+                <p>Riding, Football, Music</p>
+            </section>
 
-            <div class="section">
-                <h2>Certificates</h2>
-                <button class="cert-btn" data-cert="certificates/dsa_certificate.pdf">DSA Certificate</button>
-                <button class="cert-btn" data-cert="certificates/mongodb_certificate.pdf">MongoDB Certificate</button>
-                <button class="cert-btn" data-cert="certificates/gamesthon_7.0.pdf">Gameathon 7.0 Certificate</button>
-            </div>
+            <section class="certificates">
+                <button onclick="showCertificate()">Certificates</button>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a></p>
+            </section>
         </div>
     </div>
 
-    <div class="contact-section">
-        <h2>Contact</h2>
-        <p>Email: vignesh.k.0429@gmail.com</p>
-        <p>LinkedIn: <a href="#" id="linkedin-link">Link</a></p>
-    </div>
-
-    <div id="certificate-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <iframe id="certificate-frame"></iframe>
-        </div>
-    </div>
+    <script>
+        function showCertificate() {
+            window.open('certificates/dsa_certificate.pdf', '_blank');
+            window.open('certificates/mongodb_certificate.pdf', '_blank');
+            window.open('certificates/gamesthon_7.0.pdf', '_blank');
+        }
+    </script>
 </body>
 </html>
