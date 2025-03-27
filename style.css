@@ -28,7 +28,7 @@ body {
 
 .profile img {
     width: auto;
-    height: 95vh; /* Increased height for better alignment */
+    height: 95vh; /* Increased height to balance left and right sections */
     object-fit: cover;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     border: 3px solid #E58F28;
@@ -48,13 +48,13 @@ h1, h2 {
     color: black;
 }
 
-/* Normal text (Skills, Hobbies, Experience, Education) */
+/* Normal text (Skills, Experience, Education, Hobbies) */
 p {
     color: black;
     font-size: 16px;
 }
 
-/* Certificates Button (Only Highlighted Box) */
+/* Certificates Button (Only Certificates Highlighted) */
 .certificates {
     text-align: center;
     margin-top: 20px;
