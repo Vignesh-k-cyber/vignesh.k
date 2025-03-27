@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vignesh K - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -35,31 +36,32 @@
         <div class="right-section">
             <div class="section">
                 <h2>Skills</h2>
-                <ul>
-                    <li>C</li>
-                    <li>Python</li>
-                    <li>MATLAB</li>
-                    <li>Figma</li>
-                </ul>
+                <div class="box">C</div>
+                <div class="box">Python</div>
+                <div class="box">MATLAB</div>
+                <div class="box">Figma</div>
             </div>
 
             <div class="section">
                 <h2>Hobbies</h2>
-                <ul>
-                    <li>Riding</li>
-                    <li>Football</li>
-                    <li>Music</li>
-                </ul>
+                <div class="box">Riding</div>
+                <div class="box">Football</div>
+                <div class="box">Music</div>
             </div>
 
             <div class="section">
                 <h2>Certificates</h2>
-                <ul>
-                    <li><a href="certificates/dsa_certificate.pdf" target="_blank">DSA Certificate</a></li>
-                    <li><a href="certificates/mongodb_certificate.pdf" target="_blank">MongoDB Certificate</a></li>
-                    <li><a href="certificates/gamesthon_7.0.pdf" target="_blank">Gameathon 7.0 Certificate</a></li>
-                </ul>
+                <button class="cert-btn" data-cert="certificates/dsa_certificate.pdf">DSA Certificate</button>
+                <button class="cert-btn" data-cert="certificates/mongodb_certificate.pdf">MongoDB Certificate</button>
+                <button class="cert-btn" data-cert="certificates/gamesthon_7.0.pdf">Gameathon 7.0 Certificate</button>
             </div>
+        </div>
+    </div>
+
+    <div id="certificate-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="certificate-frame"></iframe>
         </div>
     </div>
 </body>
