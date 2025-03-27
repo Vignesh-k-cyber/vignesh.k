@@ -28,7 +28,7 @@ body {
 
 .profile img {
     width: auto;
-    height: 90vh; /* Make profile image stretch */
+    height: 95vh; /* Increased height for better alignment */
     object-fit: cover;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     border: 3px solid #E58F28;
