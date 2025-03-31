@@ -10,7 +10,6 @@ body {
 /* Layout */
 .container {
     display: flex;
-    flex-wrap: wrap;
     min-height: 100vh;
     width: 100%;
 }
@@ -20,15 +19,19 @@ body {
     width: 35%;
     background-color: #0F3D3E;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+    min-height: 100vh; /* Ensures proper height */
 }
 
+/* Profile Image */
 .profile img {
-    width: 80%;
-    max-height: 95vh; /* Adjusted height to fit */
-    object-fit: cover;
+    width: 80%; /* Adjust width */
+    max-height: 90vh; /* Prevents full-page stretch */
+    object-fit: contain; /* Ensures proper scaling */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     border: 3px solid #E58F28;
 }
@@ -42,50 +45,64 @@ body {
     overflow-y: auto;
 }
 
-h2 {
+h1, h2 {
     color: #E58F28;
 }
 
-.section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-/* Certificates Section - Highlighted */
-.certificates {
+/* Buttons (Only Certificates Highlighted) */
+button {
     background-color: #E58F28;
     color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-button {
-    background-color: white;
-    color: #E58F28;
     padding: 10px;
     border: none;
     cursor: pointer;
     margin: 5px;
-    border-radius: 5px;
 }
 
 button:hover {
     background-color: #D07525;
+}
+
+/* Sections inside Right Panel */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Highlighting Only Certificates */
+.certificate-button {
+    background-color: #E58F28; /* Highlighted */
     color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
 }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin-top: 30px;
+.certificate-button:hover {
+    background-color: #D07525;
 }
 
-.contact a {
+/* Social Links */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
     color: #E58F28;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-.contact a:hover {
+.social-links a:hover {
     text-decoration: underline;
+}
+
+/* Contact Information - Center Bottom */
+.contact {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
 }
