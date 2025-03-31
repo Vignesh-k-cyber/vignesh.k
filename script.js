@@ -1,11 +1,2 @@
-document.querySelectorAll('.cert-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const certFrame = document.getElementById('certificate-frame');
-        certFrame.src = this.getAttribute('data-cert');
-        document.getElementById('certificate-modal').style.display = 'block';
-    });
-});
-
-document.querySelector('.close-btn').addEventListener('click', function () {
-    document.getElementById('certificate-modal').style.display = 'none';
-});
+// Function to display certificate in a popup
+function showCertificate(pdfPath) { const certificateWindow = window.open(pdfPath, '_blank', 'width=800,height=600'); if (!certificateWindow) { alert('Popup blocker detected! Please allow popups for this site.'); } }
