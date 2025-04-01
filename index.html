@@ -3,153 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh K | Cybersecurity Student</title>
-    <meta name="description" content="BE in CSE Cybersecurity at Ramaiah Institute of Technology">
+    <title>Vignesh K | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <nav>
-                <div class="logo">Vignesh<span>K</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="linkedin-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div class="resume-container">
+        <!-- Header with Contact -->
+        <header class="resume-header">
+            <h1>Vignesh K</h1>
+            <h2>Cybersecurity Student & Developer</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +91 000 123 4567</p>
+                <p><i class="fas fa-envelope"></i> vignesh.k.0429@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+            </div>
+        </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Vignesh K</h1>
-                <h2>Cybersecurity Student & Developer</h2>
-                <p>Currently pursuing BE in CSE Cybersecurity at Ramaiah Institute of Technology, Bangalore | Graduating 2027</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#certificates" class="btn secondary">See Certificates</a>
+        <!-- Profile Section -->
+        <section class="resume-section">
+            <h3><i class="fas fa-user"></i> PROFILE</h3>
+            <p>Currently pursuing BE in CSE Cybersecurity at Ramaiah Institute of Technology, Bangalore. Developed an online voting application during iOS App Development internship. Passionate about cybersecurity, football, music, and riding.</p>
+        </section>
+
+        <!-- Certificates (Work Experience Style) -->
+        <section class="resume-section">
+            <h3><i class="fas fa-certificate"></i> CERTIFICATES</h3>
+            
+            <div class="experience-item">
+                <h4>MongoDB Certification</h4>
+                <a href="certificates/mongodb_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+                <p>Certified in MongoDB database management and development</p>
+            </div>
+            
+            <div class="experience-item">
+                <h4>DSA Certification</h4>
+                <a href="certificates/dsa_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+                <p>Data Structures and Algorithms certification</p>
+            </div>
+            
+            <div class="experience-item">
+                <h4>Gameathon 7.0</h4>
+                <a href="certificates/gameathon%207.0%20Vignesh.k.pdf" target="_blank" class="view-btn">VIEW</a>
+                <p>Participated in Gameathon 7.0 competition</p>
+            </div>
+        </section>
+
+        <!-- Projects (Education Style) -->
+        <section class="resume-section">
+            <h3><i class="fas fa-project-diagram"></i> PROJECTS</h3>
+            
+            <div class="education-item">
+                <h4>Online Voting Application</h4>
+                <span class="date">iOS Internship Project</span>
+                <p>Developed during iOS App Development internship using Swift and Firebase</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="resume-section">
+            <h3><i class="fas fa-code"></i> SKILLS</h3>
+            <div class="skills-grid">
+                <div class="skill-item">iOS Development</div>
+                <div class="skill-item">Swift</div>
+                <div class="skill-item">Firebase</div>
+                <div class="skill-item">Cybersecurity</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Data Structures</div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="resume-section">
+            <h3><i class="fas fa-users"></i> REFERENCES</h3>
+            <div class="references-grid">
+                <div class="reference-item">
+                    <h4>Internship Mentor</h4>
+                    <p>iOS Development</p>
+                    <p><i class="fas fa-phone"></i> +91 901 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> mentor@example.com</p>
+                </div>
+                <div class="reference-item">
+                    <h4>College Professor</h4>
+                    <p>Cybersecurity</p>
+                    <p><i class="fas fa-phone"></i> +91 987 654 3210</p>
+                    <p><i class="fas fa-envelope"></i> professor@example.com</p>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/my_photo.JPG" alt="Vignesh K">
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Education</h3>
-                    <p>BE in CSE Cybersecurity<br>Ramaiah Institute of Technology<br>2023-2027</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Experience</h3>
-                    <p>iOS App Development Internship<br>Created online voting application</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Hobbies</h3>
-                    <p>Football • Music • Riding</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <h2 class="section-title">My <span>Certificates</span></h2>
-            <div class="certificate-grid">
-                <div class="certificate-card">
-                    <div class="certificate-img">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>MongoDB Certification</h3>
-                    <a href="certificates/mongodb_certificate.pdf" target="_blank" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-img">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>DSA Certification</h3>
-                    <a href="certificates/dsa_certificate.pdf" target="_blank" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-img">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Gameathon 7.0</h3>
-                    <a href="certificates/gameathon%207.0%20Vignesh.k.pdf" target="_blank" class="btn">View Certificate</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-vote-yea"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Online Voting Application</h3>
-                    <p>Developed during iOS App Development internship at college</p>
-                    <ul class="tech-used">
-                        <li>iOS</li>
-                        <li>Swift</li>
-                        <li>Firebase</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:vignesh.k.0429@gmail.com" class="email-link">vignesh.k.0429@gmail.com</a>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Bangalore, India</span>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Vignesh K. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        </section>
+    </div>
 </body>
 </html>
