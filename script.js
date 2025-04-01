@@ -7,19 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 
-    // Email copy functionality
-    const emailElement = document.querySelector('.email-text');
-    if (emailElement) {
-        emailElement.addEventListener('click', function() {
-            navigator.clipboard.writeText(this.textContent).then(() => {
-                const originalText = this.textContent;
-                this.textContent = 'Copied!';
-                setTimeout(() => {
-                    this.textContent = originalText;
-                }, 2000);
-            });
-        });
-    }
+    // Update year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -31,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Update year in footer
-    document.querySelector('.footer p').textContent = 
-        document.querySelector('.footer p').textContent.replace('2023', new Date().getFullYear());
+    // Gmail direct message functionality is handled by HTML mailto: links
+    // No additional JS needed as browsers handle mailto: natively
 });
