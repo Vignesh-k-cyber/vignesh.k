@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="portfolio-container">
-        <!-- Profile Photo at Very Top -->
-        <header class="profile-header">
-            <div class="profile-img-container">
+    <div class="portfolio-wrapper">
+        <!-- Header with Profile Photo -->
+        <header class="portfolio-header">
+            <div class="profile-photo-container">
                 <img src="images/my_photo.JPG" alt="Vignesh K" class="profile-photo">
             </div>
-            <div class="name-title">
+            <div class="header-content">
                 <h1>Vignesh K</h1>
                 <h2>Cybersecurity Student & Developer</h2>
             </div>
         </header>
 
-        <!-- Main Content Sections -->
-        <main class="content-sections">
+        <!-- Main Content -->
+        <main class="portfolio-content">
+            <!-- Profile Section -->
             <section class="profile-section">
                 <h3><i class="fas fa-user-graduate"></i> PROFILE</h3>
                 <p>Currently pursuing BE in CSE Cybersecurity at Ramaiah Institute of Technology, Bangalore. Developed an online voting application during iOS App Development internship. Passionate about cybersecurity, football, music, and riding.</p>
             </section>
 
+            <!-- Certificates Section -->
             <section class="certificates-section">
                 <h3><i class="fas fa-certificate"></i> CERTIFICATES</h3>
                 <div class="certificate-grid">
-                    <div class="certificate-item">
+                    <div class="certificate-card">
                         <div class="certificate-header">
                             <h4>MongoDB Certification</h4>
                             <a href="certificates/mongodb_certificate.pdf" target="_blank" class="view-btn">
@@ -40,7 +42,7 @@
                         <p>Certified in MongoDB database management and development</p>
                     </div>
                     
-                    <div class="certificate-item">
+                    <div class="certificate-card">
                         <div class="certificate-header">
                             <h4>DSA Certification</h4>
                             <a href="certificates/dsa_certificate.pdf" target="_blank" class="view-btn">
@@ -50,7 +52,7 @@
                         <p>Data Structures and Algorithms certification</p>
                     </div>
                     
-                    <div class="certificate-item">
+                    <div class="certificate-card">
                         <div class="certificate-header">
                             <h4>Gameathon 7.0</h4>
                             <a href="certificates/gameathon%207.0%20Vignesh.k.pdf" target="_blank" class="view-btn">
@@ -62,12 +64,13 @@
                 </div>
             </section>
 
+            <!-- Projects Section -->
             <section class="projects-section">
                 <h3><i class="fas fa-laptop-code"></i> PROJECTS</h3>
-                <div class="project-item">
+                <div class="project-card">
                     <h4>Online Voting Application</h4>
                     <p>Developed during iOS App Development internship using Swift and Firebase</p>
-                    <ul class="tech-used">
+                    <ul class="tech-stack">
                         <li>iOS</li>
                         <li>Swift</li>
                         <li>Firebase</li>
@@ -76,8 +79,8 @@
             </section>
         </main>
 
-        <!-- Contact Information at Very Bottom -->
-        <footer class="contact-footer">
+        <!-- Contact Footer -->
+        <footer class="portfolio-footer">
             <div class="contact-container">
                 <div class="contact-item">
                     <i class="fas fa-phone-alt contact-icon"></i>
