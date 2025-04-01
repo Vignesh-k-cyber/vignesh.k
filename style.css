@@ -50,11 +50,11 @@ nav {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--dark);
+    color: #000; /* Pure black for name */
 }
 
-.logo span {
-    color: var(--primary);
+.name-space {
+    letter-spacing: 8px; /* Space between name and initial */
 }
 
 .nav-links {
@@ -111,13 +111,20 @@ nav {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    color: #000; /* Pure black for name */
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
 }
 
 .hero-content h2 {
     font-size: 1.8rem;
-    color: var(--primary);
     margin-bottom: 1.5rem;
     font-weight: 500;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero-content p {
@@ -166,7 +173,6 @@ nav {
 }
 
 .hero-image img {
-    max-width: 100%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -182,10 +188,10 @@ nav {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-}
-
-.section-title span {
-    color: var(--primary);
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .about-content {
@@ -221,21 +227,14 @@ nav {
     font-size: 1.2rem;
 }
 
-.email-text {
-    cursor: pointer;
-    position: relative;
+.email-link {
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.email-text:hover::after {
-    content: 'Click to copy';
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    background: var(--primary);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
+.email-link:hover {
+    color: var(--primary);
 }
 
 /* Certificates Section */
@@ -382,6 +381,10 @@ nav {
     .hero-image {
         margin-top: 3rem;
     }
+    
+    .hero-image img {
+        width: 350px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -410,4 +413,8 @@ nav {
     .section-title {
         font-size: 2rem;
     }
+    
+    .hero-image img {
+        width: 280px;
     }
+}
