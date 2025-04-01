@@ -95,7 +95,7 @@ nav {
     width: 100%;
 }
 
-.social-header a {
+.linkedin-btn {
     text-decoration: none;
     color: white;
     background: var(--primary);
@@ -108,7 +108,7 @@ nav {
     transition: all 0.3s;
 }
 
-.social-header a:hover {
+.linkedin-btn:hover {
     background: var(--primary-dark);
 }
 
@@ -512,7 +512,6 @@ nav {
         justify-content: center;
         gap: 2rem;
         transition: left 0.3s;
-        z-index: 999;
     }
 
     .nav-links.active {
@@ -565,4 +564,4 @@ nav {
         width: 100%;
         text-align: center;
     }
-}
+    }
