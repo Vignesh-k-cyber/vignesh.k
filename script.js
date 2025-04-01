@@ -44,28 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to a server
-            console.log('Form submitted:', data);
-            
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    }
-});
-
-// Remember to replace with your actual LinkedIn URL
-const linkedinUrl = "https://www.linkedin.com/in/yourprofile";
-document.querySelectorAll('.linkedin-btn, .social-links a[href="#"]').forEach(el => {
-    el.href = linkedinUrl;
+    // Replace with your actual LinkedIn and GitHub URLs
+    const socialLinks = {
+        linkedin: "https://www.linkedin.com/in/yourprofile",
+        github: "https://github.com/yourprofile"
+    };
+    
+    document.querySelectorAll('[href="https://www.linkedin.com/in/yourprofile"]').forEach(el => {
+        el.href = socialLinks.linkedin;
+    });
+    
+    document.querySelectorAll('[href="https://github.com/yourprofile"]').forEach(el => {
+        el.href = socialLinks.github;
+    });
 });
