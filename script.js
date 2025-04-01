@@ -1,71 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation
+    // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
     hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
+    // Email copy functionality
+    const emailElement = document.querySelector('.email-text');
+    if (emailElement) {
+        emailElement.addEventListener('click', function() {
+            navigator.clipboard.writeText(this.textContent).then(() => {
+                const originalText = this.textContent;
+                this.textContent = 'Copied!';
+                setTimeout(() => {
+                    this.textContent = originalText;
+                }, 2000);
+            });
         });
-    });
+    }
 
-    // Header scroll effect
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
-    // Smooth scrolling for anchor links
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to a server
-            console.log('Form submitted:', data);
-            
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    }
-});
-
-// Remember to replace with your actual LinkedIn URL
-const linkedinUrl = "https://www.linkedin.com/in/yourprofile";
-document.querySelectorAll('.linkedin-btn, .social-links a[href="#"]').forEach(el => {
-    el.href = linkedinUrl;
+    // Update year in footer
+    document.querySelector('.footer p').textContent = 
+        document.querySelector('.footer p').textContent.replace('2023', new Date().getFullYear());
 });
