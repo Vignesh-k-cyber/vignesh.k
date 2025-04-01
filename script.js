@@ -62,13 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
-
-    // Certificate modal functionality would go here
-    // You can implement this if you want to show certificates in a modal
 });
 
-// LinkedIn URL - Replace with your actual LinkedIn URL
+// Remember to replace with your actual LinkedIn URL
 const linkedinUrl = "https://www.linkedin.com/in/yourprofile";
-document.querySelectorAll('[href="[YOUR_LINKEDIN_URL]"]').forEach(el => {
+document.querySelectorAll('.linkedin-btn, .social-links a[href="#"]').forEach(el => {
     el.href = linkedinUrl;
 });
