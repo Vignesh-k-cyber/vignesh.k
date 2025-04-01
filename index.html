@@ -5,92 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vignesh K | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #3a86ff;
+            --primary-light: #e6f0ff;
+            --secondary: #8338ec;
+            --accent: #ff006e;
+            --dark: #14213d;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        /* Left Section */
+        .left-section {
+            width: 35%;
+            background: var(--dark);
+            color: white;
+            padding: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            margin: 0 auto 25px;
+            display: block;
+        }
+
+        .section-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info i {
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Right Section */
+        .right-section {
+            width: 65%;
+            padding: 30px;
+        }
+
+        .name-title {
+            margin-bottom: 20px;
+        }
+
+        .name-title h1 {
+            color: var(--dark);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .name-title h2 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .resume-section {
+            margin-bottom: 30px;
+        }
+
+        .resume-section h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .certificate-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .certificate-item h4 {
+            font-weight: 600;
+        }
+
+        .view-btn {
+            background: var(--primary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .view-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+            }
+            
+            .left-section, .right-section {
+                width: 100%;
+            }
+            
+            .left-section {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="resume-container">
-        <!-- Header with Contact -->
-        <header class="resume-header">
-            <h1>Vignesh K</h1>
-            <h2>Cybersecurity Student & Developer</h2>
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="images/my_photo.JPG" alt="Vignesh K" class="profile-img">
+            
             <div class="contact-info">
+                <h3 class="section-title">CONTACT</h3>
                 <p><i class="fas fa-phone"></i> +91 000 123 4567</p>
                 <p><i class="fas fa-envelope"></i> vignesh.k.0429@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
             </div>
-        </header>
-
-        <!-- Profile Section -->
-        <section class="resume-section">
-            <h3><i class="fas fa-user"></i> PROFILE</h3>
-            <p>Currently pursuing BE in CSE Cybersecurity at Ramaiah Institute of Technology, Bangalore. Developed an online voting application during iOS App Development internship. Passionate about cybersecurity, football, music, and riding.</p>
-        </section>
-
-        <!-- Certificates (Work Experience Style) -->
-        <section class="resume-section">
-            <h3><i class="fas fa-certificate"></i> CERTIFICATES</h3>
             
-            <div class="experience-item">
-                <h4>MongoDB Certification</h4>
-                <a href="certificates/mongodb_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+            <div class="skills">
+                <h3 class="section-title">SKILLS</h3>
+                <ul style="list-style-position: inside; padding-left: 5px;">
+                    <li>iOS Development</li>
+                    <li>Swift Programming</li>
+                    <li>Cybersecurity</li>
+                    <li>MongoDB</li>
+                    <li>Data Structures</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="name-title">
+                <h1>Vignesh K</h1>
+                <h2>Cybersecurity Student & Developer</h2>
+            </div>
+            
+            <div class="resume-section">
+                <h3 class="section-title">PROFILE</h3>
+                <p>Currently pursuing BE in CSE Cybersecurity at Ramaiah Institute of Technology, Bangalore. Developed an online voting application during iOS App Development internship. Passionate about cybersecurity, football, music, and riding.</p>
+            </div>
+            
+            <div class="resume-section">
+                <h3 class="section-title">CERTIFICATES</h3>
+                <div class="certificate-item">
+                    <h4>MongoDB Certification</h4>
+                    <a href="certificates/mongodb_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+                </div>
                 <p>Certified in MongoDB database management and development</p>
-            </div>
-            
-            <div class="experience-item">
-                <h4>DSA Certification</h4>
-                <a href="certificates/dsa_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+                
+                <div class="certificate-item" style="margin-top: 15px;">
+                    <h4>DSA Certification</h4>
+                    <a href="certificates/dsa_certificate.pdf" target="_blank" class="view-btn">VIEW</a>
+                </div>
                 <p>Data Structures and Algorithms certification</p>
-            </div>
-            
-            <div class="experience-item">
-                <h4>Gameathon 7.0</h4>
-                <a href="certificates/gameathon%207.0%20Vignesh.k.pdf" target="_blank" class="view-btn">VIEW</a>
+                
+                <div class="certificate-item" style="margin-top: 15px;">
+                    <h4>Gameathon 7.0</h4>
+                    <a href="certificates/gameathon%207.0%20Vignesh.k.pdf" target="_blank" class="view-btn">VIEW</a>
+                </div>
                 <p>Participated in Gameathon 7.0 competition</p>
             </div>
-        </section>
-
-        <!-- Projects (Education Style) -->
-        <section class="resume-section">
-            <h3><i class="fas fa-project-diagram"></i> PROJECTS</h3>
             
-            <div class="education-item">
+            <div class="resume-section">
+                <h3 class="section-title">PROJECTS</h3>
                 <h4>Online Voting Application</h4>
-                <span class="date">iOS Internship Project</span>
                 <p>Developed during iOS App Development internship using Swift and Firebase</p>
             </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="resume-section">
-            <h3><i class="fas fa-code"></i> SKILLS</h3>
-            <div class="skills-grid">
-                <div class="skill-item">iOS Development</div>
-                <div class="skill-item">Swift</div>
-                <div class="skill-item">Firebase</div>
-                <div class="skill-item">Cybersecurity</div>
-                <div class="skill-item">MongoDB</div>
-                <div class="skill-item">Data Structures</div>
-            </div>
-        </section>
-
-        <!-- References -->
-        <section class="resume-section">
-            <h3><i class="fas fa-users"></i> REFERENCES</h3>
-            <div class="references-grid">
-                <div class="reference-item">
-                    <h4>Internship Mentor</h4>
-                    <p>iOS Development</p>
-                    <p><i class="fas fa-phone"></i> +91 901 234 5678</p>
-                    <p><i class="fas fa-envelope"></i> mentor@example.com</p>
-                </div>
-                <div class="reference-item">
-                    <h4>College Professor</h4>
-                    <p>Cybersecurity</p>
-                    <p><i class="fas fa-phone"></i> +91 987 654 3210</p>
-                    <p><i class="fas fa-envelope"></i> professor@example.com</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>
