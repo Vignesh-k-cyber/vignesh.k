@@ -1,67 +1,90 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle functionality
-    const menuToggle = document.createElement('div');
-    menuToggle.className = 'mobile-menu-toggle';
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-    document.querySelector('.resume-header').appendChild(menuToggle);
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+  // Add fade-in animation to sections
+  const sections = document.querySelectorAll('.resume-section');
+  sections.forEach((section, index) => {
+    section.classList.add('fade-in');
+    section.style.animationDelay = `${index * 0.1}s`;
+  });
+
+  // Make phone number clickable on mobile
+  const phoneElement = document.querySelector('.contact-info p:first-child');
+  if (phoneElement && window.innerWidth <= 768) {
+    const phoneText = phoneElement.textContent.trim();
+    phoneElement.innerHTML = `<i class="fas fa-phone"></i> <a href="tel:${phoneText.replace(/\D/g, '')}">${phoneText}</a>`;
+  }
+
+  // Make email clickable
+  const emailElement = document.querySelector('.contact-info p:nth-child(2)');
+  if (emailElement) {
+    const emailText = emailElement.textContent.trim();
+    emailElement.innerHTML = `<i class="fas fa-envelope"></i> <a href="mailto:${emailText}">${emailText}</a>`;
+  }
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 20,
+          behavior: 'smooth'
         });
+      }
     });
+  });
 
-    // Make email clickable (will open default mail client)
-    const emailElement = document.querySelector('.contact-info p:nth-child(2)');
-    if (emailElement) {
-        const email = emailElement.textContent.replace('vignesh.k.0429@gmail.com', '').trim();
-        emailElement.innerHTML = `<i class="fas fa-envelope"></i> <a href="mailto:vignesh.k.0429@gmail.com">vignesh.k.0429@gmail.com</a>`;
-    }
-
-    // Make phone clickable (on mobile devices)
-    const phoneElement = document.querySelector('.contact-info p:first-child');
-    if (phoneElement) {
-        const phoneNumber = phoneElement.textContent.replace('+91 000 123 4567', '').trim();
-        phoneElement.innerHTML = `<i class="fas fa-phone"></i> <a href="tel:+910001234567">+91 000 123 4567</a>`;
-    }
-
-    // Certificate view buttons animation
-    document.querySelectorAll('.view-btn').forEach(btn => {
-        btn.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px)';
-            this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-        });
-        btn.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = 'none';
-        });
+  // Certificate view button effects
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      btn.style.transform = 'translateY(-3px)';
+      btn.style.boxShadow = '0 5px 15px rgba(58, 134, 255, 0.3)';
     });
-
-    // Dynamic year in footer (if you add one)
-    const yearElement = document.querySelector('footer p');
-    if (yearElement) {
-        yearElement.textContent = yearElement.textContent.replace('2023', new Date().getFullYear());
-    }
-
-    // Mobile menu functionality
-    menuToggle.addEventListener('click', function() {
-        document.querySelector('.resume-container').classList.toggle('menu-open');
-        this.querySelector('i').classList.toggle('fa-bars');
-        this.querySelector('i').classList.toggle('fa-times');
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translateY(0)';
+      btn.style.boxShadow = 'none';
     });
+  });
 
-    // Close mobile menu when clicking on a section
-    document.querySelectorAll('.resume-section h3').forEach(section => {
-        section.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                document.querySelector('.resume-container').classList.remove('menu-open');
-                document.querySelector('.mobile-menu-toggle i').classList.remove('fa-times');
-                document.querySelector('.mobile-menu-toggle i').classList.add('fa-bars');
-            }
-        });
-    });
+  // Print button functionality (optional)
+  const printBtn = document.createElement('button');
+  printBtn.textContent = 'Print Resume';
+  printBtn.className = 'print-btn';
+  printBtn.addEventListener('click', () => window.print());
+  document.querySelector('.left-section').appendChild(printBtn);
 });
+
+// Add print button styles
+const printStyle = document.createElement('style');
+printStyle.textContent = `
+  .print-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+  }
+  .print-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  @media print {
+    .print-btn {
+      display: none;
+    }
+    body {
+      background: white !important;
+    }
+    .resume-container {
+      box-shadow: none !important;
+    }
+  }
+`;
+document.head.appendChild(printStyle);
